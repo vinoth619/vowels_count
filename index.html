@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vowels_count</title>
+</head>
+<body>
+    <h3>[no-10]count the vowels</h3>
+    <input id="rs" type="text">
+    <button onclick="count()">count</button>
+    <script>
+        function count(){
+            var jkl=document.getElementById('rs')
+            var ck= new String();
+            ck=jkl.value;
+             var ed= ck.toLowerCase()
+              console.log(ed)
+            var a=0; var e=0; var i=0; var o=0; var u=0;
+            for(let k=0; k<ed.length; k++){
+                var char=ed[k]
+                switch (char) {
+                case 'a':
+                        a++;
+                    break;
+                case 'e':
+                        e++;
+                        break;
+                case 'i':
+                       i++;
+                       break;
+                case 'o':
+                        o++;
+                        break;
+                case 'u':
+                        u++;
+                        break;
+
+            
+                
+            }
+
+            }
+            document.write("my string value is ="+jkl.value+'<br>')
+          document.write("count of 'a'="+a+'<br>');
+          document.write("count of 'e'="+e+'<br>');
+          document.write("count of 'i'="+i+'<br>');
+          document.write("count of 'o'="+o+'<br>');
+          document.write("count of 'u'="+u+'<br>');
+
+          
+
+
+
+
+          
+        }
+    </script>
+
+    
+</body>
+
+</html>
